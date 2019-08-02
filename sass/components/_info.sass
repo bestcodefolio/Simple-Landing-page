@@ -1,0 +1,85 @@
+$date-color: #444444
+$post-color: #888888
+$twitter-color: #00bff3
+.info
+    background-color: #191919
+    color: white
+    font-family: $main-font
+    font-style: $roboto
+    padding: 3rem 0
+    .info-wrap
+        display: grid
+        justify-content: center
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 1.5rem
+    .info-about
+        .info-about-logo
+            display: flex
+            align-items: center
+        .info-about-waxom
+            font-size: 2rem
+        .info-about-text
+            font-family: $description-font
+            font-size: 0.875rem
+            color: #888888
+            margin-top: 1rem
+        .info-about-read-more
+            cursor: pointer
+            margin-top: 0.6rem
+            .info-about-read-more-text
+                font-size: 0.875rem
+            .info-about-arrow-right
+                border-top: 0.3125rem solid transparent
+                border-left: 0.3125rem solid white
+                border-bottom: 0.3125rem solid transparent
+                margin-top: -0.75rem
+                margin-left: 5rem
+    .info-recent-posts
+        .info-recent-posts-title
+            font-weight: bold
+            font-size: 1.5rem
+        .info-recent-posts-data        
+            transition: all .3s
+            font-size: 0.75rem
+            color: $date-color
+            margin-bottom: 0.5rem
+        .info-recent-posts-post
+            cursor: pointer
+            transition: all .3s
+            color: $post-color
+            font-size: 0.875rem
+            margin-top: 1rem
+            &:hover
+                color: $bronze-color
+    .info-twitter-title
+        font-weight: bold
+        font-size: 1.5rem
+    .info-twitter-post
+        cursor: pointer
+        transition: all .3s
+        color: $post-color
+        font-size: 0.875rem
+        margin-top: 1rem
+        &:hover
+            .info-twitter-twitter-data
+            color: $bronze-color
+        .info-recent-twitter-text-link
+            color: $twitter-color
+    .info-twitter-twitter-data
+        transition: all .3s
+        color: $date-color
+        font-size: 0.75rem
+    .dribbble
+        display: flex
+        flex-direction: column
+        .dribbble-title
+            font-weight: bold
+            font-size: 1.5rem
+        .widgets
+            cursor: pointer
+            display: grid
+            grid-template-columns: repeat(2, 8.125rem)
+            grid-gap: 0.4rem
+            margin-top: 1em
+            .widget-img
+                width: 100%

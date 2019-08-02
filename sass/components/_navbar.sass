@@ -1,0 +1,29 @@
+.navbar
+    .navbar-wrap
+        justify-content: space-between
+        .logo
+            .navbar-headline
+                font-size: 1.5rem
+                font-family: $main-font
+        .navbar-items
+            margin: auto 0
+            .navbar-item
+                font-family: $roboto
+                padding: 0 0.9375em
+                &:hover, 
+                &:active
+                    color: $bronze-color
+            .navbar-item-default
+                color: $bronze-color
+        .navbar-icons
+            display: flex
+            .navbar-icon
+                margin-right: 0.9375em
+.sticky
+    position: fixed
+    z-index: 999999
+    top: 0
+    width: 100%
+    background-color: rgb(88, 88, 88)
+    .icon-logo
+        font-size: 2rem

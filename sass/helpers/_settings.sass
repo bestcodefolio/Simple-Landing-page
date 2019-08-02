@@ -1,0 +1,41 @@
+.flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+.flex-col
+    display: flex
+    align-items: center
+    flex-direction: column
+
+.button
+    min-width: 10.625rem
+    min-height: 3.125rem
+    background-color: $bronze-color	
+    color: white
+    border-radius: 0.3rem
+    font-weight: bold
+    text-transform: uppercase
+    border-bottom: 0.1875rem solid #736357
+    &:active
+        border-bottom: 0
+    &:hover
+        background-color: #9a816a
+
+.container
+	display: flex
+	width: 60vw
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) 
+    .container 
+        width: 70
+
+
+.text-container
+    max-width: 60vw
+
+.card-image-container
+    width: $card-width
+    height: 13.75rem
+    margin: 0
+    padding: 0

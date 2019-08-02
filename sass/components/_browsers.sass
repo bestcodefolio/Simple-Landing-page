@@ -1,0 +1,32 @@
+$image-bottom-indent: 0.25rem
+$image-horizontal-indent: 18%
+.browsers
+    text-align: center
+    font-family: $main-font
+    background: $background-color
+    padding: 3% 0 0
+    .browsers-headline
+        font-weight: bold
+        color: $headline-color
+        font-size: 1.875rem
+    .browsers-description
+        text-align: center
+        font-size: 1rem
+        font-family: $description-font
+        color: $description-color
+        margin: 0
+        margin-top: 0.8rem
+    .browsers-images
+        position: relative
+        margin-bottom: -$image-bottom-indent
+        margin-top: 2%
+        .browsers-image1
+            position: relative
+        .browsers-image2
+            position: absolute
+            left: $image-horizontal-indent
+            bottom: $image-bottom-indent
+        .browsers-image3
+            position: absolute
+            right: $image-horizontal-indent
+            bottom: $image-bottom-indent

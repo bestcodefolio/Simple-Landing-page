@@ -1,0 +1,72 @@
+.posts
+    .posts-wrap
+        padding: 4rem 2rem
+        .posts-headline
+            font-family: $main-font
+            font-weight: bold
+            color: $headline-color
+            text-align: center
+            font-size: 1.875rem
+        .posts-description
+            font-family: $description-font
+            color: $description-color
+            font-size: 1rem
+            text-align: center
+            margin: 0
+            margin-top: 0.9375rem
+        .posts-content
+            .posts-grid-wrapper
+                display: grid
+                margin-top: 2rem
+                justify-content: center
+                grid-template-columns: repeat(3, $card-width)
+                grid-gap: 0.625rem
+                color: #444
+                .posts-example
+                    cursor: pointer
+                    transition: all 0.3s
+                    border-radius: 0.3125rem
+                    background-color: rgba(230,  230,  230, 0.3)
+                    &:hover
+                        background-color: #362f2d
+                        .posts-example-title
+                            color: $gold-color
+                        .posts-example-description
+                            color: white
+                        .posts-example-img
+                            filter: brightness(30%)
+                .posts-example-text
+                    align-items: flex-start
+                    padding: 0.625rem 1.25rem 2rem
+                    color: #000
+                    .posts-example-title
+                        transition: all .3s
+                        font-family: $main-font
+                        font-size: 1.25rem
+                    .posts-example-description
+                        color: $description-color
+                        font-size: 0.875rem
+                        font-family: $description-font
+                        margin-top: 1.25rem
+                    .posts-read-more
+                        float: left
+                        margin-top: 2rem
+                        font-family: $description-font
+                        .posts-read-more-text
+                            color: $gold-color
+                            font-size: 0.875rem
+                        .posts-arrow-right
+                            border-top: 0.3125rem solid transparent
+                            border-left: 0.3125rem solid $gold-color
+                            border-bottom: 0.3125rem solid transparent
+                            margin-top: -0.85rem
+                            margin-left: 5rem
+    .posts-buttons
+        cursor: pointer
+        position: relative
+        margin: 0 auto
+        margin-top: 2rem
+        .icon-right-arrow,
+        .icon-left-arrow
+            &:hover
+                color: #9a816a

@@ -1,0 +1,75 @@
+$primary-color: $description-color
+.portfolio
+    padding: 3.75rem 0
+    .portfolio-text
+        justify-content: center
+        .portfolio-text__headline
+            text-align: center
+            color: $headline-color
+            font-family: $main-font
+            font-size: 1.875rem
+        .portfolio-text__description
+            font-family: $description-font
+            color: $primary-color
+            text-align: center
+            font-size: 1rem
+            margin: 0
+            margin-top: 0.9375rem
+    .portfolio-navbar
+        margin-top: 2%
+        .portfolio-navbar__item
+            cursor: pointer            
+            font-size: 1rem
+            font-family: $description-font
+            color: $primary-color
+            padding: 0.3125em 1.25em
+            margin: 0 0.8rem
+            border: 1px solid #ebebeb
+            border-radius: 0.3125rem
+            &:hover
+                background-color: #c6c6c6 
+            &:active
+                background-color: $bronze-color
+                color: white
+        .portfolio-navbar__item_default
+            background-color: $bronze-color
+            color: white
+            &:hover
+                background-color: $bronze-color
+    .portfolio-grid-wrapper
+        display: grid
+        justify-content: center
+        grid-template-columns: repeat(3, $card-width)
+        grid-gap: 0.625rem
+        margin-top: 2.5rem
+        .portfolio-example
+            border-radius: 0.3125rem
+            transition: all 0.3s
+            cursor: pointer
+            color: white
+            background-color: $background-color
+            .portfolio-example__image
+                transition: .3s ease-in-out
+            .portfolio-example-text
+                align-items: flex-start
+                padding: 0.625rem 1.25rem 2rem
+                .portfolio-example-text__title
+                    font-family: $main-font
+                    color: $gold-color
+                    font-size: 1.25rem
+                    transition: all .3s
+                .portfolio-example-text__description
+                    font-size: 0.875rem
+                    color: $description-color
+                    font-family: $description-font
+            &:hover
+                background-color: #362f2d
+                .portfolio-example-text__title
+                    color: white
+                .portfolio-example-text__description
+                    color: $gold-color
+                .portfolio-example__image
+                    filter: brightness(50%)
+    .portfolio__button
+        font-family: $main-font
+        margin-top: 2.5%
